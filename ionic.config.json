@@ -1,0 +1,7 @@
+{
+  "name": "rentnaija",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
