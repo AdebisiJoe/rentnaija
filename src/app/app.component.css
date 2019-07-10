@@ -1,0 +1,187 @@
+
+
+.searchdivision{
+   background-color: #AEDDCD;
+   border-radius: 30px;
+}
+
+
+#headerimage{
+    background-image: url(../assets/imgs/rentnaija/headerimage.svg);
+}
+
+#header{
+    
+    
+   
+    height:400px;
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position: bottom left;
+    
+    margin: 0 0 0 0;
+}
+
+#header h3{
+    margin-left:10px;
+    font-weight:bold;
+    font-size: 30px;
+}
+.headertext{
+    padding-left:5%;
+}
+.searchform{
+   
+    padding-top:75px
+    /*display: flex;*/
+}
+.searchinput{
+   /* width:40%;*/
+    
+   margin:  0 auto;
+    
+}
+#searchinput{
+  height:40px;
+  border-radius:50px;
+ 
+}
+
+#searchbutton{
+   
+    border-radius:50px;
+   
+    
+}
+
+#leftborder{
+    -webkit-border-top-left-radius: 50px;
+-webkit-border-bottom-left-radius: 50px;
+-moz-border-radius-topleft: 50px;
+-moz-border-radius-bottomleft: 50px;
+border-top-left-radius: 50px;
+border-bottom-left-radius: 50px;
+}
+
+#rightborder{
+    -webkit-border-top-right-radius: 50px;
+-webkit-border-bottom-right-radius: 50px;
+-moz-border-radius-topright: 50px;
+-moz-border-radius-bottomright: 50px;
+border-top-right-radius: 50px;
+border-bottom-right-radius: 50px;
+}
+
+
+
+
+
+
+
+
+  
+#search h1{
+    
+    text-align: center;
+
+}
+#search h3{
+    margin-left:300px;
+    margin-right:500px;
+    line-height: 1.2;
+   
+    display: block;
+    color:#33A568;
+    text-align: center;
+}
+
+
+
+.howitworks{
+ 
+    
+    position: relative;
+    height:1000px;
+    margin-top: 250px;
+    
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(241, 250, 254, 1) 97.38%);
+  }
+
+  #howitworks_description{
+
+  }
+  
+#howitworksimage{
+    position: absolute; 
+    z-index: 1;
+    margin-left:450px;  
+    margin-right: 300px;
+    max-width: 500px;
+    max-height:900px;
+    margin-top:-380px;
+    
+  }
+  
+  #howitworksillustrationimage {
+      position: absolute; 
+      right: 0;
+      bottom: 0; 
+      max-width: 1400px;
+      max-height:450px;
+
+    }
+
+  .howitworks h1{
+      display:inline-block;
+      margin:0 60px;
+      vertical-align: middle;
+  
+  }
+
+  .testimonies{
+      height: 500px;
+      background-color: #172A3A;
+  }
+  .subscribe{
+    
+    margin-top:-50px;
+    height:200px;
+    
+  }
+  
+
+.subscribeform{
+   
+    margin-top:-170px;
+    display: flex;
+    align-items: center;
+  justify-content: center;
+}
+.subscribeinput{
+    width:500px;
+    margin-left:5%;
+   
+    
+}
+#subscribeinput{
+  height:40px;
+  border-radius:50px;
+}
+
+#subscribebutton{
+    margin-left:20px;
+    border-radius:50px;
+    width:100px;
+   background-color: #172A3A;
+   border-color: #172A3A; 
+}
+
+.partners{
+    height:300px;
+      background-color: #D7FEFF;
+      color:#172A3A;
+
+      align-items: center;
+      justify-content: center;
+      
+  }
