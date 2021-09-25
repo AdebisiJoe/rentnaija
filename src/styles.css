@@ -1,0 +1,128 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+
+/*----global---*/
+*{
+    margin: 0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size: 100%;
+    vertical-align:baseline;
+  }
+  html {
+      font-family: circular std,sans-serif;
+  }
+  body {
+      width:100%;
+      padding-top: 70px;
+  }
+
+  h1 {
+      
+      font-weight:100;
+      color:#33A568;
+  }
+  
+  p {
+      font-size: 16px;
+  }
+   
+.navbarbutton{
+    margin-left:20px;
+    border-radius:50px;
+    width:100px;
+    height:40px;
+    background-color:#172A3A;
+    padding:5px 15px;
+    border-radius:1000px;
+    font-weight: 100;
+    color:white;
+    margin-left:7px;
+    margin-top: 5px;
+    text-align: center;
+  }
+
+  header{
+    
+    
+}
+footer{
+  height:300px;
+  background-color: #F7F8F9;
+  color: #172A3A;
+}
+
+  /*----navbar----*/
+  .navbar {
+    border-radius: 0px;
+}
+  .navbar-default {
+    background-color: #33a568;
+    border-color: #21603e;
+  }
+  .navbar-default .navbar-brand {
+    color: #ecf0f1;
+  }
+  .navbar-default .navbar-brand:hover,
+  .navbar-default .navbar-brand:focus {
+    color: #ffffff;
+  }
+  .navbar-default .navbar-text {
+    color: #ecf0f1;
+  }
+  .navbar-default .navbar-nav > li > a {
+    color: #ecf0f1;
+  }
+  .navbar-default .navbar-nav > li > a:hover,
+  .navbar-default .navbar-nav > li > a:focus {
+    color: #ffffff;
+  }
+  .navbar-default .navbar-nav > .active > a,
+  .navbar-default .navbar-nav > .active > a:hover,
+  .navbar-default .navbar-nav > .active > a:focus {
+    color: #ffffff;
+    background-color: #21603e;
+  }
+  .navbar-default .navbar-nav > .open > a,
+  .navbar-default .navbar-nav > .open > a:hover,
+  .navbar-default .navbar-nav > .open > a:focus {
+    color: #ffffff;
+    background-color: #21603e;
+  }
+  .navbar-default .navbar-toggle {
+    border-color: #21603e;
+  }
+  .navbar-default .navbar-toggle:hover,
+  .navbar-default .navbar-toggle:focus {
+    background-color: #21603e;
+  }
+  .navbar-default .navbar-toggle .icon-bar {
+    background-color: #ecf0f1;
+  }
+  .navbar-default .navbar-collapse,
+  .navbar-default .navbar-form {
+    border-color: #ecf0f1;
+  }
+  .navbar-default .navbar-link {
+    color: #ecf0f1;
+  }
+  .navbar-default .navbar-link:hover {
+    color: #ffffff;
+  }
+  
+  @media (max-width: 767px) {
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+      color: #ecf0f1;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+      color: #ffffff;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+    .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+    .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+      color: #ffffff;
+      background-color: #21603e;
+    }
+  }
