@@ -1,0 +1,43 @@
+page-profile {
+  .header-parent{
+      position: relative;
+      text-align: center;
+  }
+  .header-social{
+      position:absolute;
+      bottom:0px;
+      text-align:center;
+      margin-top:-7.5vh;
+
+  }
+  .profile{
+      width:25%;
+      margin:0 auto;
+      margin-top:-34vh;
+  }
+  .title-name{
+      color:#ffff;
+      margin-top:-3vh;
+  }
+  .location-icon {
+      color:#ffff;
+      font-size:18px;
+      float: right;
+  }
+  .counter {
+      text-align: center;
+      margin-top: 6.5vh;
+      margin-left: 1vh;
+  }
+  .numbers{
+      font-family:open-sans;
+      color:#323e46;
+      font-size:20px;
+  }
+  .numbers-title{
+    font-family:open-sans;
+    color:#b7c4cb;
+    font-size:16px;
+    margin-top:-3vh;
+}
+}

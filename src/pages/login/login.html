@@ -1,0 +1,53 @@
+<!--
+  Generated template for the LoginPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>login</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content  class="login-page no-scroll">
+  <form (ngSubmit)="login()" >
+    <ion-list>
+        <ion-item class="label">
+            <ion-label color="primary" floating>Username</ion-label>
+            <ion-input class="rounded" type="text" [(ngModel)]="username" name="username"></ion-input>
+            
+          </ion-item>
+          <ion-item id="rounded" class="label">
+            <ion-label color="primary" floating>password</ion-label>
+            <ion-input type="password" [(ngModel)]="password" name="password"></ion-input>
+          </ion-item>
+          <div padding>
+            <button ion-button type="submit" block color="custombtncolor" round>login</button>
+            
+          </div>
+          
+    </ion-list>
+   
+    <div class="headline">
+      <a style="margin-left:2px" id="forgotpassword" (click)="goToForgotPasswordPage()" >forgot password?</a>
+      <a id="signup" (click)="goToSignupPage()" >signup</a>
+    </div>
+    
+    
+  </form>
+ <!-- <h1 id="or">OR</h1>
+  <button ion-button color="primary" ion-left block>
+    <ion-icon name="logo-facebook"></ion-icon>
+    <div>Login with Facebook</div>
+  </button>
+  <button ion-button color="danger" ion-left block>
+      <ion-icon name="logo-google"></ion-icon>
+      <div>Login with Google</div>
+    </button>-->
+
+
+</ion-content>

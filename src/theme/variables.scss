@@ -4,7 +4,7 @@
 // Font path is used to include ionicons,
 // roboto, and noto sans fonts
 $font-path: "../assets/fonts";
-
+$fa-font-path: "../assets/webfonts";
 
 // The app direction is used to include
 // rtl styles in your app. For more info, please see:
@@ -38,7 +38,9 @@ $colors: (
   secondary:  #32db64,
   danger:     #f53d3d,
   light:      #f4f4f4,
-  dark:       #222
+  dark:       #222,
+  custombtncolor:#33A568,
+  rentnaijatheme:#A0C1D1
 );
 
 
@@ -86,3 +88,12 @@ $colors: (
 
 @import "roboto";
 @import "noto-sans";
+
+
+$toolbar-background: #A0C1D1;
+$toolbar-border-color: #A0C1D1;
+$toolbar-text-color: #ffffff;
+$toolbar-active-color: #A0C1D1;
+$toolbar-inactive-color: #A3A3A3; 
+$text-input-highlight-color-valid: #A0C1D1;
+

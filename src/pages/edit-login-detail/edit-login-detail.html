@@ -1,0 +1,36 @@
+<!--
+  Generated template for the EditLoginDetailPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>EditLoginDetailPage</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <form (ngSubmit)="editLoginDetail()" >
+    <ion-list>
+
+          <ion-item >
+            <ion-label color="primary" floating color="custombtncolor">password</ion-label>
+            <ion-input type="text" [(ngModel)]="password" name="password"></ion-input>
+          </ion-item>
+             <ion-item >
+                <ion-label color="primary" floating color="custombtncolor">Confirm password</ion-label>
+                <ion-textarea   [(ngModel)]="confirmpassword" name="confirmpassword"></ion-textarea >
+              </ion-item>
+          
+          <div padding>
+            <button ion-button type="submit" block color="custombtncolor" >Submit</button>
+          </div>
+             
+    </ion-list>
+    
+  </form>
+</ion-content>

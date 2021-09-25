@@ -1,0 +1,51 @@
+page-welcome {
+    // .scroll-content {
+    //     display: flex;
+    //     flex-direction: column;
+    
+    //     ion-slides {
+    //         display: flex;
+    //     }
+    // }
+    margin:0px;
+    padding:0px;
+    .slide-logo {
+        max-height:100px;
+        max-width:100px;
+        margin: 36px 0;
+      }
+      .slide-title{
+        font-family:open-sans;
+        color:#ffff;
+      }
+      .welcome-background{
+        background-repeat:no-repeat;
+        background-position:absolute;
+        bacKground-size:cover;
+      }
+      .no-scroll .scroll-content {
+        overflow: hidden;
+      }
+
+      .content{
+        margin:0px;
+        padding:0px;
+      }
+      .swiper-wrapper{
+        margin:0px;
+        padding:0px;
+      }
+      .swiper-container{
+        margin:0px;
+        padding:0px;
+      }
+
+      .scroll-content {
+        display: flex;
+        flex-direction: column;
+        
+        ion-slides {
+            display: flex;
+        }
+        }
+}

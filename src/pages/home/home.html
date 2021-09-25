@@ -1,18 +1,110 @@
 <ion-header>
-  <ion-navbar>
-    <button ion-button menuToggle>
-      <ion-icon name="menu"></ion-icon>
-    </button>
-    <ion-title>Home</ion-title>
-  </ion-navbar>
+    <ion-toolbar >
+      <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+      <ion-title>Property Search</ion-title>    
+    
+  </ion-toolbar>
 </ion-header>
 
-<ion-content padding>
-  <h3>Ionic Menu Starter</h3>
+<ion-content>
+<ion-card>
+  <ion-card-content >
+         
+          <div>
+              <ion-segment [(ngModel)]="services">
+                <ion-segment-button value="hostel">Hostel</ion-segment-button>
+                <!-- <ion-segment-button value="rent">Rent</ion-segment-button>
+                <ion-segment-button value="hotel">Hotel</ion-segment-button> -->
+              </ion-segment>
+            </div>
+            <div [ngSwitch]="services" >
+                <ion-list *ngSwitchCase="'hostel'" ngSelected="selected">
+                  <form (ngSubmit)="searchProperty()" >
+                    <ion-list>
+                        <ion-item >
+                   
+                          
+                            <ion-label style="color:#172A3A" floating>School</ion-label>
+                            <!-- <ion-input itemValueField="id" type="text" [(ngModel)]="where" name="where"></ion-input> -->
+                             <ionic-selectable
+                              item-content 
+                               [(ngModel)]="schooldata"
+                               name="schooldata"
+                              [items]="homeschools"
+                              
+                              itemTextField="name"
+                               [canSearch]="true"
+                               (onSearch)="searchSchools($event)"
+                              (onChange)="schoolChange($event)">
+                              </ionic-selectable>
+                          </ion-item>
+                          <!-- <ion-item id="rounded">
+                            <ion-label color="primary" floating>What</ion-label>
+                            <ion-input type="text" [(ngModel)]="what" name="what"></ion-input>
+                          </ion-item> -->
+                          <!-- <ion-item id="rounded">
+                            <ion-label color="primary" floating>Price</ion-label>
+                            <ion-input type="number" [(ngModel)]="price" name="price"></ion-input>
+                          </ion-item> -->
+                          <div padding>
+                            <button ion-button type="submit" block color="custombtncolor" >Search</button>
+                          </div>
+                          
+                    </ion-list>
+                    
+                  </form>
+               </ion-list>
+               <!-- <ion-list *ngSwitchCase="'rent'">
+                <form (ngSubmit)="searchProperty()" >
+                  <ion-list>
+                      <ion-item >
+                          <ion-label color="custombtncolor" floating>Where</ion-label>
+                          <ion-input type="text" [(ngModel)]="where" name="where"></ion-input>
+                        </ion-item>
+                        <ion-item id="rounded">
+                          <ion-label color="custombtncolor" floating>What</ion-label>
+                          <ion-input type="text" [(ngModel)]="what" name="what"></ion-input>
+                        </ion-item>
+                        <ion-item id="rounded">
+                          <ion-label color="custombtncolor" floating>Price</ion-label>
+                          <ion-input type="number" [(ngModel)]="price" name="price"></ion-input>
+                        </ion-item>
+                        <div padding>
+                          <button ion-button type="submit" block color="custombtncolor"  >Search</button>
+                        </div>
+                        
+                  </ion-list>
+                  
+                </form>
+               </ion-list> -->
+               <!-- <ion-list *ngSwitchCase="'hotel'">
+                <form (ngSubmit)="searchProperty()" >
+                  <ion-list>
+                      <ion-item >
+                          <ion-label color="custombtncolor" floating>Where</ion-label>
+                          <ion-input type="text" [(ngModel)]="where" name="where"></ion-input>
+                        </ion-item>
+                        <ion-item id="rounded">
+                          <ion-label color="custombtncolor" floating>What</ion-label>
+                          <ion-input type="text" [(ngModel)]="what" name="what"></ion-input>
+                        </ion-item>
+                        <ion-item id="rounded">
+                          <ion-label color="custombtncolor" floating>Price</ion-label>
+                          <ion-input type="number" [(ngModel)]="price" name="price"></ion-input>
+                        </ion-item>
+                        <div padding>
+                          <button ion-button type="submit" block color="custombtncolor"  >Search</button>
+                        </div>
+                        
+                  </ion-list>
+                  
+                </form>
+             </ion-list> -->
+            </div>
+  </ion-card-content>
+</ion-card>
 
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
-  </p>
 
-  <button ion-button secondary menuToggle>Toggle Menu</button>
 </ion-content>

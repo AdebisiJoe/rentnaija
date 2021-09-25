@@ -1,0 +1,38 @@
+page-detailpage {
+
+   
+    .welcome-background{
+        background-repeat:no-repeat;
+        background-position:center;
+        bacKground-size:contain;
+      }
+      ion-slide {
+        height: 100vh;
+        flex-direction: column;
+    }
+    .property_properties {
+        
+        border: solid #e8e8e8 1px;
+        margin: 0 auto;
+        padding: 0 ;
+        background-color: #EEEEEE;
+        text-align: center;
+        }
+        .wrapper {
+            text-align: center;
+        }
+
+        .property_wrapper{
+            margin: 0 auto;
+            padding: 0 ;  
+        }
+
+        .scroll-content {
+            display: flex;
+            flex-direction: column;
+            
+            ion-slides {
+                display: flex;
+            }
+            }
+}

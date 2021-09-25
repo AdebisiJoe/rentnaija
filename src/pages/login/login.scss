@@ -1,0 +1,46 @@
+page-login {
+  
+    
+    .headline h1, .headline a {
+        display: inline;
+        vertical-align: top;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 16px;
+        line-height: 28px;  
+        color:#ffff;  
+    }
+    .headline h1 {
+        font-weight: bold;
+    }
+    #signup{
+        margin-left: 100px;
+    }
+    #or{
+        display: inline;
+        align-content: center;
+        align-self: center;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 16px;
+        line-height: 28px; 
+        margin-left:50%;
+    }
+    .login-page{
+      //  background-image:url("../assets/imgs/slideimages/slide3.png");
+        background-color:#A0C1D1;
+        background-repeat:no-repeat;
+        background-position:center;
+        bacKground-size:contain;
+    }
+
+    .no-scroll .scroll-content {
+        overflow: hidden;
+      }
+
+    .label {
+        background-color: rgba(255,255,255,0.0);
+    } 
+    
+    input{ background: white; padding: 15px; border-radius: 5px; border: 1px solid #c8c7cc ; margin: 0; }
+
+    
+}

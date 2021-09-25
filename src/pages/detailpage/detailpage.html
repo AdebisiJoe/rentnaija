@@ -1,0 +1,161 @@
+<!--
+  Generated template for the SearchresultsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+    <ion-navbar hideBackButton="false">
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+          </button>
+      <ion-title>{{name}}</ion-title>
+    </ion-navbar>
+  
+</ion-header>
+  
+  
+  <ion-content padding scroll="true">
+      <div style="height:250px" >
+
+            <ion-slides pager style="height:100%">
+                    <ion-slide  [style.backgroundImage]="'url('+coverImage+')'  " class="welcome-background" >
+                        
+                               
+                   </ion-slide>
+   
+                    <ion-slide *ngFor="let image of images" [style.backgroundImage]="'url('+image.imgurl+')'" class="welcome-background" >
+                        
+                        <div padding>
+                        <h3 class="slide-title"  >Height --{{image.height}}</h3>
+                        <h3 class="slide-title"  >Width --{{image.height}}</h3>
+                         
+                        </div>
+                    </ion-slide>
+                      
+    </ion-slides>
+      </div>
+
+   <div>
+        <ion-row>
+                <ion-col col-12  >
+                       
+                    <h2 [innerHTML]="name"></h2>
+                
+                        <p [innerHTML]="address"></p>
+                    
+                        <p [innerHTML]="description"></p>
+                   
+                      
+                  
+                         <h1 >
+                            {{price| currency:'NGN':'&#x20A6;'}}
+                         </h1>
+                
+                         <button class="viewproperty" *ngIf="userHasLikedProperty==false" ion-button round  color="primary" (click)="addToFavourites(propertyId)"><i class="fas fa-heart" style="margin-right: 5px"></i>Like</button>
+                         <button class="viewproperty" *ngIf="userHasLikedProperty==true" ion-button round  color="danger" (click)="addToFavourites(propertyId)"><i class="fas fa-heart" style="margin-right: 5px"></i>Like</button>
+                        
+                 </ion-col>
+        </ion-row> 
+   </div>
+            
+    
+  
+      
+          
+     <div>
+    
+            <h1 style="margin-top:20px;">Sub properties</h1>
+
+            <ion-list>
+                <ion-item *ngFor="let subProperty of subProperties">
+                      
+                         <ion-thumbnail  item-start>
+                             <img [src]="subProperty.coverphoto" />
+                        </ion-thumbnail >
+                        <h2>{{subProperty.name}}</h2>
+                        <p>{{subProperty.room}} room(s)</p>
+                        <ion-note  *ngIf="subProperty.available==1">Not Available</ion-note>
+                        <ion-note  *ngIf="subProperty.available==0">Available</ion-note>
+                     
+                    
+                    <button ion-button round item-end (click)="bookProperty(subProperty.id)">Book</button>
+                </ion-item>
+            </ion-list>
+     </div>
+
+     <div>
+     <h1 style="margin-top:20px;">Feactures</h1>
+
+     <ion-list *ngFor="let propertyProperty of propertyProperties">
+           
+           
+          
+            <ion-item >
+               <p item-start >Church<i class="fa fa-church" style="margin-left:5px"></i></p> 
+                <i  *ngIf="propertyProperty.church==1" item-end class="fa fa-check"></i>    
+                <i *ngIf="propertyProperty.church==0" item-end class="fa fa-times"></i>   
+            </ion-item>
+            
+            <ion-item >
+                    <p item-start >Office<i class="fa fa-building" style="margin-left:5px"></i></p> 
+                     <i  *ngIf="propertyProperty.goffice==1" item-end class="fa fa-check"></i>    
+                     <i *ngIf="propertyProperty.goffice==0" item-end class="fa fa-times"></i>   
+                 </ion-item>
+                 
+            <ion-item >
+                    <p item-start >Gym center<i class="fa fa-dumbbell" style="margin-left:5px"></i></p> 
+                     <i  *ngIf="propertyProperty.gymcenter==1" item-end class="fa fa-check"></i>    
+                     <i *ngIf="propertyProperty.gymcenter==0" item-end class="fa fa-times"></i>   
+                 </ion-item>
+   
+            <ion-item >
+                    <p item-start >Hair saloon<i class="fa fa-hard-hat" style="margin-left:5px"></i></p> 
+                     <i  *ngIf="propertyProperty.hairsaloon==1" item-end class="fa fa-check"></i>    
+                     <i *ngIf="propertyProperty.hairsaloon==0" item-end class="fa fa-times"></i>   
+                 </ion-item>
+                 
+            <ion-item >
+                    <p item-start >Hospital<i class="fa fa-hospital" style="margin-left:5px"></i></p> 
+                     <i  *ngIf="propertyProperty.hospital==1" item-end class="fa fa-check"></i>    
+                     <i *ngIf="propertyProperty.hospital==0" item-end class="fa fa-times"></i>   
+                 </ion-item>
+                 
+            <ion-item >
+                    <p item-start >Hotel<i class="fa fa-hotel" style="margin-left:5px"></i></p> 
+                     <i  *ngIf="propertyProperty.hotel==1" item-end class="fa fa-check"></i>    
+                     <i *ngIf="propertyProperty.hotel==0" item-end class="fa fa-times"></i>   
+                 </ion-item>
+                 
+            <ion-item >
+                    <p item-start >Market<i class="fa fa-market" style="margin-left:5px"></i></p> 
+                     <i  *ngIf="propertyProperty.market==1" item-end class="fa fa-check"></i>    
+                     <i *ngIf="propertyProperty.market==0" item-end class="fa fa-times"></i>   
+                 </ion-item>
+                 
+            <ion-item >
+                    <p item-start >Mosque<i class="fa fa-mosque" style="margin-left:5px"></i></p> 
+                     <i  *ngIf="propertyProperty.mosque==1" item-end class="fa fa-check"></i>    
+                     <i *ngIf="propertyProperty.mosque==0" item-end class="fa fa-times"></i>   
+                 </ion-item>
+                 
+            <ion-item >
+                    <p item-start >Resturant<i class="fa fa-resturant" style="margin-left:5px"></i></p> 
+                     <i  *ngIf="propertyProperty.resturant==1" item-end class="fa fa-check"></i>    
+                     <i *ngIf="propertyProperty.resturant==0" item-end class="fa fa-times"></i>   
+                 </ion-item>
+                 
+            <ion-item >
+                    <p item-start >Security<i class="fa fa-security" style="margin-left:5px"></i></p> 
+                     <i  *ngIf="propertyProperty.security==1" item-end class="fa fa-check"></i>    
+                     <i *ngIf="propertyProperty.security==0" item-end class="fa fa-times"></i>   
+            </ion-item>
+                 
+    
+           
+        </ion-list>
+     </div>
+
+ </ion-content>
+  

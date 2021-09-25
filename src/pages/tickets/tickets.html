@@ -1,0 +1,40 @@
+<!--
+  Generated template for the TicketsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+    <ion-navbar >
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+          </button>
+    <ion-title>Tickets</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+    <ion-list  >
+    <ion-item-sliding *ngFor="let ticket of tickets; let ticketIndex = index" (click)="gotoTocketDetail(ticket.ticket_id)">
+          <ion-item >
+            
+              Title: {{ticket.title}}
+              <ion-badge color="secondary" *ngIf="ticket.status=='open'" item-end>  {{ticket.status}}</ion-badge>
+              <ion-badge color="danger" *ngIf="ticket.status!='open'" item-end>  {{ticket.status}}</ion-badge>
+            
+            
+          </ion-item>
+          
+      </ion-item-sliding>
+    
+    </ion-list>
+  
+    <ion-fab right bottom>
+       <button ion-fab (click)="goToOpenTicketsPage()" >
+       <!-- <button ion-fab [navPush]="openTicketsPage">-->
+        <ion-icon name="add"></ion-icon>
+      </button>
+    </ion-fab>
+  </ion-content>
